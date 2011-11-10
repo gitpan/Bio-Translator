@@ -2,17 +2,21 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'NAME' => 'Bio::Translator',
-  'VERSION_FROM' => 'lib/Bio/Translator.pm',
-  'PREREQ_PM' => {
-                   'Bio::Util::AA' => '0.001000',
-                   'Bio::Util::DNA' => '0.002000',
-                   'Test::More' => 0
-                 },
+  'PL_FILES' => {},
   'INSTALLDIRS' => 'site',
+  'NAME' => 'Bio::Translator',
   'EXE_FILES' => [
                    'bin/translate_fasta.pl'
                  ],
-  'PL_FILES' => {}
+  'VERSION_FROM' => 'lib/Bio/Translator.pm',
+  'PREREQ_PM' => {
+                   'Test::More' => 0,
+                   'Params::Validate' => 0,
+                   'Bio::Util::AA' => '0.001000',
+                   'Bio::Util::DNA' => '0.002000',
+                   'Class::Accessor' => 0,
+                   'List::Compare' => 0,
+                   'Carp' => 0
+                 }
 )
 ;

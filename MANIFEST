@@ -5,7 +5,10 @@ lib/Bio/Translator.pm
 lib/Bio/Translator/Table.pm
 lib/Bio/Translator/Utils.pm
 lib/Bio/Translator/Validations.pm
+Makefile.PL
 MANIFEST			This list of files
+META.json
+META.yml
 README
 t/00-load.t
 t/01-translate.t
@@ -16,6 +19,3 @@ t/23-find.t
 t/24-nonstop.t
 t/25-getORF.t
 t/26-getCDS.t
-Makefile.PL
-META.yml
-META.json
